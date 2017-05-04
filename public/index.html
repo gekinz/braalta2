@@ -7,15 +7,18 @@
   <link rel="stylesheet" href="style.css" type="text/css">
   <script type="text/javascript" src="js/instafeed.min.js"></script>
   <script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'user',
-        userId: 'prosjektz',
-        clientId: 'fa319aeedb5b4f6fa071dacab011261b',
-        limit: '4'
-      ##	template: '<a href="{{link}}"><img src="{{image}}" /></a>'
-    });
-    feed.run();
-  </script>
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: '205657610',
+    clientId: 'fa319aeedb5b4f6fa071dacab011261b',
+    accessToken: '205657610.fa319ae.faaeba09e3754d06a6a104ddce8f442f',
+    resolution: 'low_resolution',
+    template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+    sortBy: 'most-recent',
+    limit: 5
+  });
+  userFeed.run();
+</script>
 </head>
 
 <body>
@@ -45,8 +48,7 @@
       </div>
     </div>
   </div>
-  <div class="py-5 section text-center">
-    <div class="container" id="instafeed"></div>
+  <div id="instafeed" class="py-5 section text-center">
   </div>
   <div class="py-5 section text-center">
     <div class="container"></div>
@@ -134,36 +136,6 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-  <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">  <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-  <img
-    id="hzDownscaled" style="position: absolute; top: -10000px;"> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-    <img
-      id="hzDownscaled" style="position: absolute; top: -10000px;"> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-      <img
-        id="hzDownscaled" style="position: absolute; top: -10000px;"> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-        <img
-          id="hzDownscaled" style="position: absolute; top: -10000px;"> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-          <img
-            id="hzDownscaled" style="position: absolute; top: -10000px;"> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-            <img
-              id="hzDownscaled" style="position: absolute; top: -10000px;"> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-              <img
-                id="hzDownscaled" style="position: absolute; top: -10000px;"> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                <img
-                  id="hzDownscaled" style="position: absolute; top: -10000px;"> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                  <img
-                    id="hzDownscaled" style="position: absolute; top: -10000px;"> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                    <img
-                      id="hzDownscaled" style="position: absolute; top: -10000px;"> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                      <img
-                        id="hzDownscaled" style="position: absolute; top: -10000px;"> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                        <img
-                          id="hzDownscaled" style="position: absolute; top: -10000px;"> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                          <img
-                            id="hzDownscaled" style="position: absolute; top: -10000px;"> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                            <img
-                              id="hzDownscaled" style="position: absolute; top: -10000px;"> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                              <img
-                                id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"> </body>
-
+  <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+</body>
 </html>
