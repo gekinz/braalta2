@@ -1,271 +1,157 @@
-<html>
-
+<!DOCTYPE HTML>
+<html lang="no">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/glyphicon.css" type="text/css">
+  <link rel="stylesheet" href="css/mincss.css" type="text/css">
+  <link rel="stylesheet" href="css/mdb.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Reenie+Beanie" rel="stylesheet">
   <script type="text/javascript" src="js/instafeed.min.js"></script>
-  <script type="text/javascript">
-    var userFeed = new Instafeed({
-      get: 'user',
-      userId: '205657610',
-      clientId: 'fa319aeedb5b4f6fa071dacab011261b',
-      accessToken: '205657610.fa319ae.faaeba09e3754d06a6a104ddce8f442f',
-      resolution: 'low_resolution',
-      template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
-      sortBy: 'most-recent',
-      limit: 5
-    });
-    userFeed.run();
-  </script>
+
   <title>Prosjekt Z 2017</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-light text-center fixed-top bg-primary">
-    <div class="container"> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav id="mainNav" class="navbar navbar-default navbar-expand-md text-center fixed-top" role="navigation">
+    <div class="container-fluid"> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
                   </button>
-      <div class="collapse navbar-collapse text-center justify-content-center" id="navbarColor01">
+      <div class="collapse navbar-collapse text-center justify-content-center" data-toggle="collapse" id="navbarColor01">
         <ul class="navbar-nav">
-          <li class="nav-item active"> <a class="nav-link" href="#">Nyheter<br></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Turnering<br></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Bankett<br></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Priser<br></a> </li>
-          <li class="nav-item"><a class="nav-link" href="#">Sted<br></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Samarbeidspartnere<br></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Kontakt&nbsp;informasjon</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#fotball">Fotball<br></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#bankett">Bankett<br></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#example1">Nytt<br></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#priser">Priser<br></a> </li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Sted<br></a></li>
+          <li class="nav-item"><a class="nav-link" href="#tilhjelp">Samarbeidspartnere<br></a></li>
+          <li class="nav-item"><a class="nav-link" href="#takontakt">Ta Kontakt</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="bg-primary text-center d-flex h-100 align-items-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="display-1 text-white">PROSJEKT Z 2017<br></h1>
-          <p class="lead text-white"></p> <a href="#" class="btn btn-lg btn-secondary">Button</a> </div>
-      </div>
-    </div>
-  </div>
-  <div id="instafeed" class="py-5 section text-center"> </div>
-  <div class="py-5 section text-center">
-    <div class="container"></div>
-  </div>
-  <div class="py-5  section bg-primary">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6"> <img src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" class="img-fluid img-thumbnail"> </div>
-        <div class="col-md-6">
-          <h1 class="text-primary">HEADING</h1>
-          <p class="lead text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-            pretium quis, sem. </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5  section bg-primary">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1 class="text-primary">HEADING</h1>
-          <p class="lead text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-            pretium quis, sem. </p>
-        </div>
-        <div class="col-md-6"> <img src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" class="img-fluid"> </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5 section text-center">
-    <div class="container"></div>
-  </div>
-  <div class="bg-faded py-0 text-center">
+  <div id="bg" class="text-center d-flex h-100 align-items-center bg-img">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6 text-center align-self-center">
-          <h1>DU FINNER OSS HER<br></h1>
-          <p><b>COOP BANEN</b>&nbsp;<br>Thomasbakkveien 22&nbsp;<br>Alta, Finnmark<br></p>
-          <div class="my-3 row text-center">
-            <div class="col-4"> <a><i class="fa fa-3x fa-facebook text-primary"><a href="#asd"></a></i>
-              </a>
-            </div>
-            <div class="col-4"> <a><i class="fa fa-3x fa-twitter text-primary"></i></a> </div>
-            <div class="col-4"> <a><i class="fa fa-3x fa-instagram text-primary"></i></a> </div>
-          </div>
+        <div class="wow col-lg-12">
+          <h6 id="main-header-text" class="wow animated fadeIn" data-wow-delay="1s" data-wow-duration="100">Prosjekt Z</h6>
+          <p>
+            <span style="font-size:10vw;color:white;margin-top:.5em;" class="glyphicon glyphicon-chevron-down wow animated bounceInUp" data-wow-delay="2s" aria-hidden="true"></span>
+          </p>
         </div>
-        <div class="col-md-6 p-0"> <img class="img-fluid" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;center=folsom+Ave+san+francisco&amp;zoom=16&amp;size=640x300&amp;sensor=false&amp;scale=2"> </div>
       </div>
     </div>
   </div>
-  <div class="py-5 section text-center">
-    <div class="container"></div>
+  <div class="py-5  bg-inverse">
+    <div id="fotball" class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 wow animated fadeInLeft view overlay hm-zoom"> <img src="images/fotball.png" class="img-fluid img-thumbnail"> </div>
+        <div class="col-md-6">
+          <h1 class="text-inverse wow animated fadeInRight" data-wow-delay="0.1s">Fotball</h1>
+          <p class="text-white wow animated fadeInRightBig" data-wow-delay="0.3s">Prosjekt Z ble første gang arrangert i 2013</p>
+          <p class="text-white wow animated fadeInRightBig" data-wow-delay="0.4s">Damer og herrer, gutter og jenter, samles her i Alta for å delta på årets happening innen vennefotball. Vårt mål med turneringa er alltid det samme - i år, skal være enda bedre enn i fjor!</p>
+          <p class="text-white wow animated fadeInRightBig" data-wow-delay="0.5s">Vi ses til sommeren!</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="py-5  section">
-    <div class="container">
+  <div class="py-5 bg-inverse ">
+    <div id="bankett" class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="text-inverse wow animated fadeInLeft" data-wow-delay="0.1s">Bankett</h1>
+          <p class="  text-white wow animated fadeInLeftBig" data-wow-delay="0.3s">I år som i fjor, stiller vi med mat, drikke og underholdning på bankett.</p>
+          <p class="  text-white wow animated fadeInLeftBig" data-wow-delay="0.4s">Konsertene vil vi plassere på City Scene, Finnmarks svar på Oslo Spektrum</p>
+          <p class="  text-white wow animated fadeInLeftBig" data-wow-delay="0.5s">Vi regner med å fylle lokalet til randen og lover et fantastisk scene show med nydelig lyd og heftig lys.</p>
+
+        </div>
+        <div class="col-md-6 wow animated fadeInRight view overlay hm-zoom"> <img src="images/konsert.png" class="img-fluid"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-inverse py-5  container-fluid">
+    <div class="row">
+      <div id="example1" class="card-deck"></div>
+    </div>
+  </div>
+  <div class="bg-inverse container-fluid" style="overflow:hidden">
+    <div name="#nyheter" id="content" style="overflow:hidden;" class="wow animated slideInLeft row text-center" data-wow-delay="0.3s"></div>
+  </div>
+  <div id="priser" class="py-5 bg-purple  text-center">
+    <div class="container-fluid">
+      <div class="col-12 text-black">
+        <h7>Påmelding kommer</h7>
+      </div>
+    </div>
+  </div>
+  <div class="bg-inverse py-0 text-center">
+    <div class="container-fluid" style="overflow:hidden;">
+      <div class="row">
+        <div id="kontakt" class="col-md-6 text-center align-self-center text-white wow animated fadeInLeft">
+          <h1>Du finner oss her<br></h1>
+          <p><b>COOP BANEN</b> <br>Thomasbakkveien 22 <br>Alta, Finnmark<br></p>
+          <div class="my-3 row text-center">
+            <div class="col-4"> <a href="https://www.facebook.com/prosjektz" target="_blank"><i class="blue-text wow animated flipInX fa fa-3x fa-facebook" data-wow-delay="0.5s"></i></a></div>
+            <div class="col-4"> <a href="https://www.instagram.com/prosjektz/" target="_blank"><i class="purple-text wow animated flipInX fa fa-3x fa-instagram" data-wow-delay="0.7s"></i></a> </div>
+            <div class="col-4"> <a href="https://twitter.com/bra_alta" target="_blank"><i class="cyan-text wow animated flipInX fa fa-3x fa-twitter" data-wow-delay="0.9s"></i></a> </div>
+          </div>
+        </div>
+        <div id="map" class="col-md-6 p-0 wow animated fadeInRight"></div>
+      </div>
+    </div>
+  </div>
+  <div id="tilhjelp" class="py-5  text-center">
+    <div class="container-fluid">
+      <img src="images/thonhotelalta.png" class="samarbeidspartnere wow animated fadeInUp" data-wow-delay="0.2s" />
+      <img src="images/barents.jpg" class="samarbeidspartnere wow animated fadeInUp" data-wow-delay="0.3s" />
+      <img src="images/altaposten.jpg" class="samarbeidspartnere wow animated fadeInUp" data-wow-delay="0.4s" />
+      <img src="images/BorealisGourmet_fargelogo.jpg" class="samarbeidspartnere wow animated fadeInUp" data-wow-delay="0.5s" />
+      <img src="images/sametinget.png" class="samarbeidspartnere wow animated fadeInUp" data-wow-delay="0.6s" />
+      <img src="images/norden.jpg" class="samarbeidspartnere wow animated fadeInUp" data-wow-delay="0.7s" />
+    </div>
+  </div>
+  <div class="py-5 takontakt">
+    <div id="takontakt" class="container-fluid">
       <div class="row">
         <div class="col-md-4">
-          <h2 class="text-sm-center text-primary">STYRET</h2>
-          <p class="my-1 text-center">Telefon: +47 458 59 111&nbsp;<br>E-post: post@bra-alta.no&nbsp;<br>Org.Nr: 811 655 732&nbsp;<br><br>Leder: Mathias Sønvisen Moe<br>&nbsp;+47 458 59 111<br>mathias@bra-alta.no&nbsp;<br><br>Nest leder: Magnar Sønvisen Moe +47 915 26 673</p>
+          <h2 class="text-center text-inverse">STYRET</h2>
+          <p class="my-1 text-center">(+47) 458 59 111 <br>post@bra-alta.no <br>Org.Nr: 811 655 732 <br><br><b>Leder:</b><br>Mathias Sønvisen Moe<br> (+47) 458 59 111<br>mathias@bra-alta.no <br><br><b>Nest leder:</b><br>Magnar Sønvisen Moe<br>(+47) 915 26 673</p>
         </div>
         <div class="col-md-4">
-          <h2 class="text-sm-center text-primary">AVDELINGER<br></h2>
-          <p class="my-1 text-center">Fotball:&nbsp;<br>E-post: fotball@bra-alta.no<br>+47 909 21 603&nbsp;<br><br>Konsert:<br>E-post: konsert@bra-alta.no<br>+47 906 22 238<br><br>IT Avdeling:<br>E-post: admin@bra-alta.no<br>+47 413 50 742</p>
+          <h2 class="text-center text-inverse">AVDELINGER<br></h2>
+          <p class="my-1 text-center"><b>Fotball:</b> <br>fotball@bra-alta.no<br>(+47) 909 21 603 <br><br><b>Konsert:</b><br>konsert@bra-alta.no<br>(+47) 906 22 238<br><br><b>IT Avdeling:</b><br>admin@bra-alta.no<br>(+47) 413 50 742</p>
         </div>
         <div class="col-md-4">
-          <h2 class="text-sm-center text-primary">PROSJEKT YES</h2>
+          <h2 class="text-center text-inverse">PROSJEKT YES</h2>
           <p class="my-1 text-center">Kommer</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="py-5 section text-center">
-    <div class="container">
+  <div class="py-1 text-center  bg-faded">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <p class="lead">B.R.A © 2017 - Levert av polarbytes.</p>
+          <p style="font-size:1.5em;">B.R.A © 2017 - Levert av polarbytes.</p>
         </div>
       </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-  <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script> <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-  <img
-    id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-    <img
-      id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-      <img
-        id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-        <img
-          id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-          <img
-            id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-            <img
-              id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-              <img
-                id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                <img
-                  id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                  <img
-                    id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                    <img
-                      id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                      <img
-                        id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                        <img
-                          id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                          <img
-                            id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                            <img
-                              id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                              <img
-                                id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                  style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                <img
-                                  id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                    style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                  <img
-                                    id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                      style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                    <img
-                                      id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                        style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                      <img
-                                        id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                          style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                        <img
-                                          id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                            style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                          <img
-                                            id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                              style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                            <img
-                                              id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                                style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                              <img
-                                                id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                                  style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                <img
-                                                  id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                  <img
-                                                    id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                    <img
-                                                      id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                      <img
-                                                        id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                        <img
-                                                          id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                          <img
-                                                            id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                            <img
-                                                              id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                              <img
-                                                                id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                <img
-                                                                  id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                  <img
-                                                                    id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                    <img
-                                                                      id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                      <img
-                                                                        id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                        <img
-                                                                          id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                          <img
-                                                                            id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                            <img
-                                                                              id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                              <img
-                                                                                id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                <img
-                                                                                  id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                  <img
-                                                                                    id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                    <img
-                                                                                      id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                      <img
-                                                                                        id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                        <img
-                                                                                          id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                          <img
-                                                                                            id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                            <img
-                                                                                              id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                              <img
-                                                                                                id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                                <img
-                                                                                                  id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                                                                                    style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                                  <img
-                                                                                                    id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                                                                                      style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                                    <img
-                                                                                                      id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                                                                                        style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                                      <img
-                                                                                                        id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                                                                                          style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                                        <img
-                                                                                                          id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                                                                                            style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                                          <img
-                                                                                                            id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                                                                                              style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                                            <img
-                                                                                                              id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                                                                                                style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                                              <img
-                                                                                                                id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                                                                                                  style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                                                <img
-                                                                                                                  id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled"
-                                                                                                                    style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                                                  <img
-                                                                                                                    id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                                                    <img
-                                                                                                                      id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
-                                                                                                                      <img
-                                                                                                                        id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"></body>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/fbnews.js"></script>
+  <script type="text/javascript" src="js/get-twitter.js"></script>
+  <script type="text/javascript" src="js/instaget.js"></script>
+  <script type="text/javascript" src="js/google_map.js"></script>
+  <script type="text/javascript" src="js/minjs.js"></script>
+  <script type="text/javascript" src="js/navbaranimation.js"></script>
+</body>
 
 </html>

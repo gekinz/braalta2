@@ -1,0 +1,9 @@
+
+
+AuthName "public_html"
+AuthUserFile "/home/braalta/.htpasswds/public_html/passwd"
+
+# BEGIN WordPress
+
+# END WordPress
+

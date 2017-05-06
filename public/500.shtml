@@ -1,0 +1,36 @@
+<!--#set var="title" value="500 Internal Server Error" -->
+<!--#set var="msg" value="The request was not completed. The server met an unexpected condition." -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title><!--#echo var="title" --></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <body>
+    <div id="body-content">
+<a href="http://www.golarge.com/suborbitalconic.php"><div style="height: 0px; width: 0px;"></div></a>
+<!-- start content-->
+
+<!--
+ instead of REQUEST_URI, we could show absolute URL via:
+ http://HTTP_HOST/REQUEST_URI
+    but what if its https:// or other protocol?
+
+    SERVER_PORT_SECURE doesn't seem to be used
+    SERVER_PORT logic would break if they use alternate ports
+-->
+
+<h1><!--#echo var="title" --></h1>
+<p><!--#echo var="msg" --></p>
+  <blockquote>
+    <!--#echo var="HTTP_HOST" --><!--#echo var="REQUEST_URI" --> (port <!--#echo var="SERVER_PORT" -->)
+  </blockquote>
+<hr />
+<!--#echo encoding="none" var="SERVER_SIGNATURE" -->
+
+<!-- end content -->
+<a href="http://www.thatsmej.nl/contact/epic.php?tag=4"><!-- longstanding-ordinal --></a>
+
+   </div>
+  </body>
+</html>
+

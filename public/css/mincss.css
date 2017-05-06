@@ -1,0 +1,287 @@
+html, body {
+  height: 100%;
+  min-height: 100%; /* for firefox */
+}
+.samarbeidspartnere {
+  width: 20%;
+  padding: 2em;
+}
+
+.bg-img{
+  background-image: url(../images/bgred2.png);
+}
+
+
+nav {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+  color:white;
+}
+nav a {
+  color: white;
+  color:rgba(255, 255, 255, 0.9);
+}
+text-purple a:hover {
+  color: rgb(170, 130, 200);
+  color: rgba(170, 130, 200, 1);
+    /* Add additional styles here for the UNCOLLAPSED state */
+  }
+@media(min-width:768px) {
+nav.navbar {
+  visibility: hidden;
+}
+nav.navbar.shrink {
+  visibility: visible;
+  -webkit-transition: all .35s;
+  -ms-transition: all .35s;
+  -o-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+  padding: 15px 0;
+    /* Add additional styles here for the UNCOLLAPSED state */
+  }
+}
+
+h6 {
+/*!  font-family: 'Covered By Your Grace', cursive; */
+  font-family: 'Reenie Beanie', cursive;
+  color: white;
+  font-size: 25vw;
+}
+h1 {
+  font-family: 'Reenie Beanie', cursive;
+  color: white;
+  font-size: 15vw;
+}
+.img-thumbnail {
+  padding: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  max-width: 100%;
+  height: auto; }
+
+.bg-purple {
+  background-color: rgba(170, 130, 200, .6)
+}
+
+#kontakt h1 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-family: 'Reenie Beanie', cursive;
+  color: white;
+  font-size: 5em;
+}
+#kontakt {
+  padding-bottom: 2em;
+}
+h7 {
+  font-family: 'Reenie Beanie', cursive;
+  color: white;
+  font-size: 12vw;
+}
+.takontakt {
+  background-color: #00bbd3;
+}
+.takontakt p {
+  color: white;
+}
+
+/* INSTAGRAM CSS */
+
+#content {
+  position: relative;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+#content p {
+  position: absolute;
+	bottom: 0;
+	color: white;
+  background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 556px) {
+	#content p {
+		visibility: hidden;
+		}
+	}
+#content .post {
+  position: relative;
+  width: 25vw;
+  height: 25vw;
+  background: #000;
+  display: block;
+  overflow: hidden;
+}
+@media(max-width:768px) {
+	#content .post {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-position: center;
+	  background-size: cover;
+	  -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+	  transition: all .15s ease-in-out;
+		width: 100%;
+	}
+}
+#content .post .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+#content .post ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background:rgb(170, 130, 200);
+  background:rgba(170, 130, 200, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #FFF;
+}
+#content .post ul li {
+  text-align: center;
+  line-height: 50px;
+	list-style: none;
+}
+#content .post:hover .image {
+  opacity: .5;
+  -o-transform: scale(1.15) translate3d(0, 0, 0);
+  -webkit-transform: scale(1.15) translate3d(0, 0, 0);
+  -moz-transform: scale(1.15) translate3d(0, 0, 0);
+  -ms-transform: scale(1.15) translate3d(0, 0, 0);
+          transform: scale(1.15) translate3d(0, 0, 0);
+}
+#content .post:hover ul {
+  -o-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+}
+
+
+
+
+/*TWITTER CSS*/
+
+
+.user, .tweet, .timePosted {
+  float:left;
+  padding-bottom: 1em;
+}
+@media(min-width:768px) {
+#example1 .card {
+  padding: 1em;
+  padding-bottom: 1em;
+}
+#example1 {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+}
+
+@media(max-width:768px) {
+#example1 .card {
+  padding: 1em;
+  padding-bottom: 4em !important;
+  width:100%;
+  }
+}
+@media (max-width: 991px) {
+#example1 .card-deck .card {
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    width: 100%;
+  }
+}
+#example1 .card-deck{
+  margin-left: 2em;
+}
+
+.user {
+  clear:left;
+}
+
+.user a {
+ width: 100px;
+}
+
+.user span span {
+  width:100px;
+  display:block;
+  margin-top:10px;
+}
+
+.user img, .user a > span {
+  margin-top: 1em;
+  float:left;
+}
+
+.interact {
+  float:left;
+  width:10%;
+  margin-top:-7px;
+}
+
+.interact a {
+  margin-left:5px;
+  float:left;
+}
+
+.user a > span {
+  margin-left:10px;
+}
+
+.media img {
+  max-width:250px;
+  max-height:250px;
+}
+
+#linkage {
+  position:fixed;
+  top:0;
+  right:0;
+  background-color:#3d3d3d;
+  color:#ffffff;
+  text-decoration:none;
+  padding:5px;
+  width:10%;
+  font-family:arial;
+}

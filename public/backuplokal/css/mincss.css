@@ -1,0 +1,81 @@
+html, body {
+  height: 100%;
+  min-height: 100%; /* for firefox */
+}
+.samarbeidspartnere {
+  width: 20%;
+  padding: 2em;
+}
+
+.bg-img{
+  background-image: url(../images/bgred2.png);
+}
+
+
+nav {
+  background-color: rgba(0,0,0,0.8);
+  color:white;
+}
+nav a {
+  color:rgba(255, 255, 255, 0.9);
+}
+nav.navbar.text-purple a:hover {
+  color: rgba(170, 130, 200, 1);
+    /* Add additional styles here for the UNCOLLAPSED state */
+  }
+@media(min-width:768px) {
+nav.navbar {
+  visibility: hidden;
+}
+nav.navbar.shrink {
+  visibility: visible;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+  padding: 15px 0;
+    /* Add additional styles here for the UNCOLLAPSED state */
+  }
+}
+
+h6 {
+/*!  font-family: 'Covered By Your Grace', cursive; */
+  font-family: 'Reenie Beanie', cursive;
+  color: white;
+  font-size: 25vw;
+}
+h1 {
+  font-family: 'Reenie Beanie', cursive;
+  color: white;
+  font-size: 15vw;
+}
+.img-thumbnail {
+  padding: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  max-width: 100%;
+  height: auto; }
+
+.bg-purple {
+  background-color: rgba(170, 130, 200, .6)
+}
+
+#kontakt h1 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  ont-family: 'Reenie Beanie', cursive;
+  color: white;
+  font-size: 5em;
+}
+#kontakt {
+  padding-bottom: 2em;
+}
+h7 {
+  font-family: 'Reenie Beanie', cursive;
+  color: white;
+  font-size: 12vw;
+}
+.takontakt {
+  background-color: #00bbd3;
+}
+.takontakt p {
+  color: white;
+}
