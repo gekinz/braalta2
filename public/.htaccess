@@ -1,9 +1,73 @@
+<IfModule mod_deflate.c>
+    SetOutputFilter DEFLATE
+    <IfModule mod_setenvif.c>
+        # Netscape 4.x has some problems...
+        BrowserMatch ^Mozilla/4 gzip-only-text/html
 
+        # Netscape 4.06-4.08 have some more problems
+        BrowserMatch ^Mozilla/4\.0[678] no-gzip
 
-AuthName "public_html"
-AuthUserFile "/home/braalta/.htpasswds/public_html/passwd"
+        # MSIE masquerades as Netscape, but it is fine
+        # BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 
-# BEGIN WordPress
+        # NOTE: Due to a bug in mod_setenvif up to Apache 2.0.48
+        # the above regex won't work. You can use the following
+        # workaround to get the desired effect:
+        BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 
-# END WordPress
+        # Don't compress images
+        SetEnvIfNoCase Request_URI .(?:gif|jpe?g|png)$ no-gzip dont-vary
+    </IfModule>
 
+    <IfModule mod_headers.c>
+        # Make sure proxies don't deliver the wrong content
+        Header append Vary User-Agent env=!dont-vary
+    </IfModule>
+</IfModule>
+
+RewriteEngine on
+
+# Redirect to domain without www.
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule .* http://%1%{REQUEST_URI} [R=301,L]
+# Same for HTTPS:
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule .* https://%1%{REQUEST_URI} [R=301,L]
+
+# Ensure all directory URLs have a trailing slash.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\/$
+RewriteCond %{REQUEST_URI} !\/[^\/]*\.[^\/]+$
+RewriteRule .* http://%{HTTP_HOST}%{REQUEST_URI}/ [L,R=301]
+# Same for HTTPS:
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\/$
+RewriteCond %{REQUEST_URI} !\/[^\/]*\.[^\/]+$
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI}/ [L,R=301]
+
+# Add Caching.
+<FilesMatch ".(ico|jpg|jpeg|png|gif|js|css|swf|png)$">
+    Header set Cache-Control "max-age=31104000"
+</FilesMatch>
+
+# Prevent viewing of htaccess file.
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
+
+# Prevent directory listings
+Options All -Indexes
+
+# Compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript

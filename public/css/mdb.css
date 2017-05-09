@@ -5422,7 +5422,7 @@ button:focus {
   .btn-danger:hover, .btn-danger:focus {
     background-color: #db0000 !important; }
   .btn-danger.active {
-    background-color: maroon !important; }
+    background-color: #D72638 !important; }
 
 .btn-link {
   background-color: transparent;
